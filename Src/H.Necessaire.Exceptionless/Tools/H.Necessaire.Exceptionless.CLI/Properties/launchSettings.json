@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "CLI - debug": {
+      "commandName": "Project",
+      "commandLineArgs": "debug"
+    },
+    "CLI - nugetversion - consolidate-deps": {
+      "commandName": "Project",
+      "commandLineArgs": "nugetversion consolidate-deps"
+    },
+    "CLI - nugetversion - patch": {
+      "commandName": "Project",
+      "commandLineArgs": "nugetversion update H.Necessaire.Exceptionless=patch"
+    },
+    "CLI - nugetversion - minor": {
+      "commandName": "Project",
+      "commandLineArgs": "nugetversion update H.Necessaire.Exceptionless=minor"
+    },
+    "CLI - nugetversion - major": {
+      "commandName": "Project",
+      "commandLineArgs": "nugetversion update H.Necessaire.Exceptionless=major"
+    }
+  }
+}
