@@ -17,9 +17,30 @@ namespace H.Necessaire.Exceptionless.CLI
                 {
                     Values = new[] {
                         "NuSpecRootFolderPath".ConfigWith(GetCodebaseFolderPath()),
+                        "Exceptionless".ConfigWith(
+                            "ApiKey".ConfigWith(ReadConnectionStringFromFile("ExceptionlessApiKey.cfg.txt"))
+                        )
                     },
                 }));
             ;
+        }
+
+        private static string ReadConnectionStringFromFile(string filePath)
+        {
+            FileInfo fileInfo = new FileInfo(filePath);
+
+            if (!fileInfo.Exists)
+                return null;
+
+            string? result = null;
+
+            new Action(() =>
+            {
+                result = File.ReadAllText(fileInfo.FullName);
+            })
+            .TryOrFailWithGrace(onFail: ex => result = null);
+
+            return result;
         }
 
         private static string GetCodebaseFolderPath()

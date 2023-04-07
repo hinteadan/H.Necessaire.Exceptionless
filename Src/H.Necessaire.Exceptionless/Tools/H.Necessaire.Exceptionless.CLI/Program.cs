@@ -10,6 +10,7 @@ namespace H.Necessaire.Exceptionless.CLI
             new CliApp()
                 .WithEverything()
                 .WithDefaultRuntimeConfig()
+                .With(x => x.Register<ExceptionlessDependencyGroup>(() => new ExceptionlessDependencyGroup()))
                 .Run(askForCommandIfEmpty: true)
                 .GetAwaiter()
                 .GetResult()

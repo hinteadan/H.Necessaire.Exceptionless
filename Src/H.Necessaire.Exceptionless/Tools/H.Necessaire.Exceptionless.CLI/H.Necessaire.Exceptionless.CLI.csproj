@@ -13,4 +13,10 @@
     <ProjectReference Include="..\..\H.Necessaire.Exceptionless\H.Necessaire.Exceptionless.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ExceptionlessApiKey.cfg.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
