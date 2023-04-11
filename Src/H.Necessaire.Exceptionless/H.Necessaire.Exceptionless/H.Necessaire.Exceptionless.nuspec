@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>H.Necessaire.Exceptionless</id>
-    <version>1.0.0-dev-0001</version>
+    <version>1.0.0</version>
     <title>H's Necessaire Exceptionless Integration</title>
     <projectUrl>https://h.necessaire.dev</projectUrl>
     <repository type="git" url="https://github.com/hinteadan/H.Necessaire.Exceptionless.git" branch="master" />
