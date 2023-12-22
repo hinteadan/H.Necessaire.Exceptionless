@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Exceptionless" Version="6.0.3" />
-    <PackageReference Include="H.Necessaire" Version="2.32.2" />
+    <PackageReference Include="H.Necessaire" Version="2.33.0" />
   </ItemGroup>
 
   <ItemGroup>
