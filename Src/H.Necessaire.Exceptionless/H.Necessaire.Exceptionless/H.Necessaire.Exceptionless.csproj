@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Exceptionless" Version="6.0.3" />
-    <PackageReference Include="H.Necessaire" Version="2.34.10" />
+    <PackageReference Include="Exceptionless" Version="6.0.4" />
+    <PackageReference Include="H.Necessaire" Version="2.34.14" />
   </ItemGroup>
 
   <ItemGroup>
